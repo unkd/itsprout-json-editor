@@ -5,7 +5,15 @@ const PopUp = ({ folders, setPic, setIsPopUp }) => {
   return (
     <>
       <div className="fixed top-0 left-0 w-full h-full p-[25px] bg-[rgb(0,0,0,0.25)] z-10">
-        <div className="max-w-[700px] w-full bg-white mx-auto rounded p-[20px] max-h-[700px] overflow-y-scroll">
+        <div className="max-w-[700px] w-full bg-white mx-auto rounded p-[20px] max-h-[700px] overflow-y-scroll relative">
+          <span
+            class="material-symbols-outlined absolute top-[10px] right-[10px] cursor-pointer text-[32px]"
+            onClick={() => {
+              setIsPopUp(false);
+            }}
+          >
+            close
+          </span>
           {folders.map((folder) => {
             const { name, images } = folder;
             return (
