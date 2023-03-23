@@ -1,2 +1,2 @@
-# itsprout-json-editor
-Local tool for content operations
+itsprout-json-editor\server> npm start - запустити локальний сервер (edited) 
+itsprout-json-editor> npm run dev - запустити фронтенд
