@@ -1,3 +1,6 @@
+import { Fragment } from "react";
+import uuid from "react-uuid";
+
 const PopUp = ({ folders, setPic, setIsPopUp }) => {
   return (
     <>
@@ -6,7 +9,7 @@ const PopUp = ({ folders, setPic, setIsPopUp }) => {
           {folders.map((folder) => {
             const { name, images } = folder;
             return (
-              <>
+              <Fragment key={uuid()}>
                 <div>
                   <h2 className="text-[24px]">
                     Folder: <span className="font-[500] ml-[15px]">{name}</span>
@@ -28,7 +31,7 @@ const PopUp = ({ folders, setPic, setIsPopUp }) => {
                     })}
                   </div>
                 </div>
-              </>
+              </Fragment>
             );
           })}
         </div>

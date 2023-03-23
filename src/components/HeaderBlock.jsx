@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import CopyBtn from "./CopyBtn";
 import PopUp from "./PopUp";
 import SectionTitle from "./SectionTitle";
 import { ContextWrapper } from "./uploadingForm";
@@ -6,12 +7,14 @@ import { ContextWrapper } from "./uploadingForm";
 const HeaderBlock = () => {
   const [isPopUp, setIsPopUp] = useState(false);
   const { data, setData, folders } = useContext(ContextWrapper);
-
   const [image, setImage] = useState(data["Mentors"]);
 
   useEffect(() => {
     data["Mentors"] = image;
   }, [image]);
+
+  console.log(data);
+
   return (
     <>
       <div className="flex flex-col">
@@ -76,7 +79,20 @@ const HeaderBlock = () => {
               />
             </div>
             <div className="flex gap-[20px]">
-              Mentors:
+              <div className="flex gap-[10px]">
+                Mentors:
+                <div
+                  className="cursor-pointer"
+                  onClick={() => {
+                    navigator.clipboard.writeText(data["Mentors"]);
+                  }}
+                >
+                  <span class="material-symbols-outlined text-[24px] pointer-events-none mt-[4px]">
+                    content_copy
+                  </span>
+                </div>
+              </div>
+
               {image == "" && (
                 <>
                   <button
