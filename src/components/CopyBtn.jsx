@@ -6,7 +6,7 @@ const CopyBtn = ({ toCopy }) => {
         navigator.clipboard.writeText(JSON.stringify(toCopy));
       }}
     >
-      <span class="material-symbols-outlined text-[24px] pointer-events-none mt-[4px]">
+      <span className="material-symbols-outlined text-[24px] pointer-events-none mt-[4px]">
         content_copy
       </span>
     </button>

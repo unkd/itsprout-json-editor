@@ -31,6 +31,7 @@ const Review = ({ data, deleteElement }) => {
           {pic == "" && (
             <>
               <button
+                type="button"
                 className="border px-[15px] py-[3px] rounded border-black mt-[5px] w-fit"
                 onClick={() => {
                   setIsPopUp(true);
@@ -64,6 +65,7 @@ const Review = ({ data, deleteElement }) => {
         />
 
         <textarea
+          required
           placeholder="Text"
           className="border w-[200px] h-[100px]"
           value={text}

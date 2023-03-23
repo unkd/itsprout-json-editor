@@ -30,6 +30,7 @@ const InfoBlock = ({ data, deleteElement }) => {
         {image == "" && (
           <>
             <button
+              type="button"
               className="border px-[15px] py-[3px] rounded border-black mt-[5px]"
               onClick={() => {
                 setIsPopUp(true);
@@ -62,6 +63,7 @@ const InfoBlock = ({ data, deleteElement }) => {
         />
 
         <textarea
+          required
           placeholder="Text"
           className="border w-[200px] h-[100px]"
           value={text}

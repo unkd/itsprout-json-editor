@@ -37,6 +37,7 @@ const Section3 = () => {
           })}
         </ul>
         <button
+          type="button"
           className="border px-[20px] rounded border-neutral-600 mt-[15px] py-[5px] bg-white"
           onClick={() => {
             setData((prev) => {

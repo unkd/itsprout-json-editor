@@ -13,8 +13,6 @@ const HeaderBlock = () => {
     data["Mentors"] = image;
   }, [image]);
 
-  console.log(data);
-
   return (
     <>
       <div className="flex flex-col">
@@ -22,7 +20,7 @@ const HeaderBlock = () => {
         <div className="flex flex-col p-[20px] border rounded-lg bg-white mt-[15px]">
           <div className="flex gap-[25px]">
             <div className="flex flex-col">
-              <div>URL</div>
+              <div>URL:</div>
               <div>
                 <div>
                   /internship/
@@ -43,21 +41,20 @@ const HeaderBlock = () => {
               </div>
             </div>
             <div className="flex flex-col  w-fit">
-              <div>Status</div>
+              <div>Status:</div>
               <button
                 type="button"
                 onClick={() => {
                   setData((prev) => {
                     const copy = { ...prev };
-                    copy["Status"] = !copy["Status"];
+                    copy["Status"] =
+                      copy["Status"] == "Inactive" ? "Active" : "Inactive";
                     return copy;
                   });
                 }}
-                className={`px-[20px] font-[500] w-[100px] text-[#fff] rounded ${
-                  data["Status"] ? "bg-green-500" : "bg-red-500"
-                }`}
+                className={`px-[20px] font-[500] w-[100px] text-[#fff] rounded bg-black`}
               >
-                {data["Status"] ? "Active" : "Inactive"}
+                {data["Status"]}
               </button>
             </div>
           </div>
@@ -87,7 +84,7 @@ const HeaderBlock = () => {
                     navigator.clipboard.writeText(data["Mentors"]);
                   }}
                 >
-                  <span class="material-symbols-outlined text-[24px] pointer-events-none mt-[4px]">
+                  <span className="material-symbols-outlined text-[24px] pointer-events-none mt-[4px]">
                     content_copy
                   </span>
                 </div>
@@ -96,6 +93,7 @@ const HeaderBlock = () => {
               {image == "" && (
                 <>
                   <button
+                    type="button"
                     className="border px-[15px] py-[3px] rounded border-black mt-[5px] w-fit"
                     onClick={() => {
                       setIsPopUp(true);

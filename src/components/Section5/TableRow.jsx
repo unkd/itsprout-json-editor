@@ -19,6 +19,7 @@ const TableRow = ({ data, deleteRow }) => {
             onChange={(e) => {
               setTime(e.target.value);
             }}
+            required
           />
         </th>
         <td className="border border-neutral-400">
@@ -28,6 +29,7 @@ const TableRow = ({ data, deleteRow }) => {
             onChange={(e) => {
               setSpecification(e.target.value);
             }}
+            required
           />
           <span
             class="material-symbols-rounded absolute -right-[30px] top-[5px] cursor-pointer"

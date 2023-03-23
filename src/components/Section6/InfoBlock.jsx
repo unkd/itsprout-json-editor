@@ -33,6 +33,7 @@ const InfoBlock = ({ data, index, deleteElement }) => {
           {image == "" && (
             <>
               <button
+                type="button"
                 className="border px-[15px] py-[3px] rounded border-black mt-[5px] w-fit"
                 onClick={() => {
                   setIsPopUp(true);
@@ -66,13 +67,14 @@ const InfoBlock = ({ data, index, deleteElement }) => {
         />
 
         <textarea
+          required
           placeholder="Text"
           className="border w-[200px] h-[100px]"
           value={text}
           onChange={(e) => {
             setText(e.target.value);
           }}
-        ></textarea>
+        />
       </div>
       {folders && isPopUp && (
         <PopUp folders={folders} setPic={setImage} setIsPopUp={setIsPopUp} />

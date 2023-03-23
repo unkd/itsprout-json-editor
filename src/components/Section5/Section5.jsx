@@ -11,9 +11,9 @@ const Section5 = () => {
   const deleteRow = (row) => {
     setData((prev) => {
       const copy = { ...prev };
-      copy["Section#5_Teamwork"].table = copy[
+      copy["Section#5_Teamwork"].timeTable = copy[
         "Section#5_Teamwork"
-      ].table.filter((el) => el != row);
+      ].timeTable.filter((el) => el != row);
       return copy;
     });
   };
@@ -52,7 +52,7 @@ const Section5 = () => {
                 </tr>
               </thead>
               <tbody>
-                {data["Section#5_Teamwork"].table.map((row) => {
+                {data["Section#5_Teamwork"].timeTable.map((row) => {
                   return (
                     <TableRow key={uuid()} data={row} deleteRow={deleteRow} />
                   );
@@ -60,12 +60,13 @@ const Section5 = () => {
               </tbody>
             </table>
             <button
+              type="button"
               className="px-[20px] h-fit bg-white border absolute top-0 -right-[50px] border-neutral-600 rounded py-[5px] text-[14px]"
               onClick={() => {
                 setData((prev) => {
                   const copy = { ...prev };
-                  copy["Section#5_Teamwork"].table = [
-                    ...copy["Section#5_Teamwork"].table,
+                  copy["Section#5_Teamwork"].timeTable = [
+                    ...copy["Section#5_Teamwork"].timeTable,
                     { time: "", specification: "" },
                   ];
                   return copy;
