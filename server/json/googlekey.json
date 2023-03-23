@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "internship-jsonformater",
+  "private_key_id": "e88e4b4422522e91414311d78ddee805d580ecba",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtyZ7gsvhy6S9z\ntUx7mvgFAho6kgmkNeIOmyrt8C+mExJXXXeoBiIB9jip61kUgj2Q1rdFqdb26jT3\nqdzZq30MELjeynVQTl4jvpU1e4gItvt9sXAJiJqxVouVAAVfCIYYwrZLrt1bWsaE\nBBMuFSPbi8GMgaXzvgNr1Z0XfwMYN6C1+Jbp9adjm5fxdWgRS7FI1bRKXZQmIFIs\n8hLVe3GDyYP6amj1wq3nlX/IM/D7mjIqMpf5ajhvRs0guhzFasRFVFt0RnPGV1b1\n8KRjrBMOQf7xygU8ICSLebAGt+y+7uvSn/ZTehPYhkAY7e578RskQxcaRgKTyNn1\ngXGAD7ZJAgMBAAECggEATZVgjcyoONicPAo4kkftKIM3RWWT01DQ0hd4k0+yXfBO\ntF0AQa03Omv7APSVyJ+aL5KDsCBx3LpTGiulcjFqOlwuxBtbQxYxVcDL6Nv0r3tN\nC+COdVscQEY0OzkOrM3n2571dhUjMhj03dPZ4i1C3Ezog7sPZKCz80yifG5R6dmS\nh3lHMXhVNcwqNpOEhyQIu3EkwcuvgfjTDSVwQFp+fAxLsyN0JjYC1q+bl6howkmE\ndvqef/bkPrEqVHKLBMuPI1k/cf84qlBwE7UpethxjfrJ5T5FVWJEPPFCGuSNE3l8\n3+5mil38EGDBwhNKQyw+3p8ZHXc439AkwVCZzVYWfwKBgQDnrd6/VE+Vsg8G69UZ\nmGM+fpG4okmKOWEGyxXQx0aGRbw9FakJIUxna2b7PvZhD03YjY6ZD+squijmvbpN\ny6v9R8PV3uyz4e0ydzZ9k7vkm+Y9Tsy5XWk8e0AcpjvquLroUEIOQnBMW9wfuZKv\nSql/XeT407AQ6QL0GU3eh8h5fwKBgQDAB/nLT4f9YkfQabAd3p/93HHN8pjk/XhC\nHKzRJy99s71mv4XyaTwr1edRQUkktpfmF2jdOWoWQ59qabGsGHToK79aYO/wqNKT\n7rFtI7OcdbTlo0kVOJ5mvzNv7gRV/OxhMNC+pqXlO8JpHJ/8x/hmU8reXa63Y1sz\nexePb3hkNwKBgFiMA45s0t4L5+JlUFUwAP5psZg3rpO9ym+mPvhEsZewH3nZRXnP\n2DvOuNVeAxyllMMnl1C43NC/xdIqwYHqThnHy/l58k3uE5IuLg1g4XdGfoEAFQ7j\nvMz47lAE2PGlGQqhYh3BFtqYYVFew8lrZ8zePh08Cxbrd82DvldG3kBRAoGAVe87\nyc/9e1bP7GRfe/50epZ8Fz3JTjBf8LYEYFS42/fjemea+bA+TR+cNLCSmutbboxr\nURSwdOYuIODLscgACSYKq9dViM0D70+R9tVTO2ExYtJ/kg+UU0adLinFpvVYkuXV\nhHvvIXZsub0lm2mhr6kvz/L8jPTZi2A6WuX3amECgYEAhOX4R0WFQ8Nh2u4vkwRV\nAufpME8t53qbwf7Dinh8RSGCoNtoD2fTu3DUp2etvEW28QmuL5sDCYRKzBq9wRN7\njTmFdsYcqWNYLvqaU+oG7TTv/lQLLYeigvecQ9EJepK5yn6mJtQ1sMuE4/TmZzN2\nDIhLkWZzN+GCS1qoqUlW1JQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "internshipsjsonformater@internship-jsonformater.iam.gserviceaccount.com",
+  "client_id": "103748161702783065691",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/internshipsjsonformater%40internship-jsonformater.iam.gserviceaccount.com"
+}
